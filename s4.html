@@ -1,0 +1,76 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lee | Beauty Salon</title>
+    <link rel="stylesheet" href="s4.css">
+</head>
+
+<body>
+    <header>
+        <ul>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Masters</a></li>
+            <li><a href="#">Price List</a></li>
+            <li>
+                <h1>Lee</h1>
+                <h2>beauty salon</h2>
+            </li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Contact Us</a></li>
+            <li><a href="#">Schedule</a></li>
+        </ul>
+    </header>
+    <main>
+        <section>
+            <h2>Booking Details - </h2>
+            <p>Name - <span id="result-name"></span></p>
+            <p>Date - <span id="result-date"></span></p>
+            <p>Email - <span id="result-email"></span></p>
+            <p>Contact - <span id="result-contact"></span></p>
+            <script>
+                document.getElementById("result-name").innerHTML = localStorage.getItem("textvalue"); 
+                document.getElementById("result-date").innerHTML = localStorage.getItem("datevalue");
+                document.getElementById("result-email").innerHTML = localStorage.getItem("emailvalue");
+                document.getElementById("result-contact").innerHTML = localStorage.getItem("contactnumbervalue");
+            </script>
+        </section>
+        <section>
+            <h2>Confirm Booking</h2>
+            <button><a href="s5.html">Confirm</a> </button>
+            <button><a href="s3.html">Cancel</a></button>
+        </section>
+    </main>
+    <hr>
+    <footer>
+        <section>
+            <h1>Lee</h1>
+            <h2>beauty salon</h2>
+            <p>It's your time to shine. We will care about the rest.</p>
+        </section>
+        <section>
+            <h6>Contacts</h6>
+            <p>info@leebeauty.com</p>
+            <p>+321-3231-4434</p>
+            <p>Av. Albert Lancaster 30, <br>
+                1180, Bruselles, Belgium.</p>
+        </section>
+        <section>
+            <h6>Working Hours</h6>
+            <p>Monday - Friday</p>
+            <p>10 a.m. - 7 p.m.</p>
+            <p>Saturday - Sunday</p>
+            <p>11 a.m. - 9 p.m.</p>
+        </section>
+        <section>
+            <h6>Follow Us</h6>
+            <p><img src="fb-icon.svg" alt="fb-icon">Facebook</p>
+            <p><img src="insta-icon.svg" alt="instagram-icon">Instagram</p>
+            <p><img src="twt-icon.svg" alt="twitter-icon">Twitter</p>
+        </section>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,262 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lee | Beauty Salon</title>
+    <link rel="stylesheet" href="s2.css">
+    <script>
+        function isChecked() {
+            var checked = document.querySelectorAll('input[type="checkbox"]:checked');
+            if (checked.length === 0) {
+                alert('No service selected');
+                return false;
+            } else {
+                true;
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <header>
+        <ul>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Masters</a></li>
+            <li><a href="#">Price List</a></li>
+            <li>
+                <h1>Lee</h1>
+                <h2>beauty salon</h2>
+            </li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Contact Us</a></li>
+            <li><a href="#">Schedule</a></li>
+        </ul>
+    </header>
+    <main>
+        <section class="procedure">
+            <h3>Schedule a visit.</h3>
+            <ul>
+                <li><img src="e1-tick.svg">
+                    <h6>Step 1</h6>
+                    <p>Enter contact details.</p>
+                </li>
+                <li><img src="e1-col.svg">
+                    <h6>Step 2</h6>
+                    <p>Choose service(s).</p>
+                </li>
+                <li><img src="e1.svg">
+                    <h6>Step 3</h6>
+                    <p>Confirm Booking.</p>
+                </li>
+            </ul>
+        </section>
+        <form onsubmit="return isChecked();" action="s3.html">
+            <details>
+                <summary><span>-01</span><span>Hair Care</span><span>+</span></summary>
+                <div class="hair-care">
+                    <span>Haircut (1 price for all length)</span>
+                    <span>130₹</span>
+                    <span>Up to 1 hr</span>
+                    <input type="checkbox">
+                    <span>Dyeing (above shoulders)</span>
+                    <span>210₹</span>
+                    <span>Up to 1.5 hrs</span>
+                    <input type="checkbox">
+                    <span>Dyeing (below shoulders)</span>
+                    <span>250₹</span>
+                    <span>Up to 2 hrs</span>
+                    <input type="checkbox">
+                    <span>Styling (above shoulders)</span>
+                    <span>250₹</span>
+                    <span>Up to 40 mins</span>
+                    <input type="checkbox">
+                    <span>Styling (below shoulders)</span>
+                    <span>300₹</span>
+                    <span>Up to 1 hr</span>
+                    <input type="checkbox">
+                    <span>Perm (above shoulders)</span>
+                    <span>200₹</span>
+                    <span>Up to 4 hrs</span>
+                    <input type="checkbox">
+                    <span>Perm (below shoulders)</span>
+                    <span>250₹</span>
+                    <span>Up to 6 hrs</span>
+                    <input type="checkbox">
+                    <span>Straigtening Perm (above shoulders)</span>
+                    <span>300₹</span>
+                    <span>Up to 3 hrs</span>
+                    <input type="checkbox">
+                    <span>Straightening Perm (below shoulders)</span>
+                    <span>350₹</span>
+                    <span>Up to 5 hrs</span>
+                    <input type="checkbox">
+                </div>
+            </details>
+            <details>
+                <summary><span>-02</span><span>Facial Treatments</span><span>+</span></summary>
+                <div class="facial">
+                    <span>Laser Skin Rejuvenation.</span>
+                    <span>450₹</span>
+                    <span>Up to 3.5 hrs</span>
+                    <input type="checkbox">
+                    <span>Laser Skin Resurfacing.</span>
+                    <span>350₹</span>
+                    <span>Up to 2 hrs</span>
+                    <input type="checkbox">
+                    <span>Chemical Peels.</span>
+                    <span>350₹</span>
+                    <span>Up to 2.5 hrs</span>
+                    <input type="checkbox">
+                    <span>IPL Photo Rejuvenation.</span>
+                    <span>550₹</span>
+                    <span>Up to 2 hrs</span>
+                    <input type="checkbox">
+                    <span>Botox.</span>
+                    <span>650₹</span>
+                    <span>Up to 5 hrs</span>
+                    <input type="checkbox">
+                    <span>Dermal Fillers.</span>
+                    <span>450₹</span>
+                    <span>Up to 3 hrs</span>
+                    <input type="checkbox">
+                </div>
+            </details>
+            <details>
+                <summary><span>-03</span><span>Advanced Facial Treatments</span><span>+</span></summary>
+                <div class="adv-facial">
+                    <span>Intraceuticals Oxygen Facial.</span>
+                    <span>650₹</span>
+                    <span>Up to 4.5 hrs</span>
+                    <input type="checkbox">
+                    <span>Series of Oxygen Treatments.</span>
+                    <span>450₹</span>
+                    <span>Up to 1.5 hrs</span>
+                    <input type="checkbox">
+                    <span>Peptide Lift Advanced Oxygen Facial.</span>
+                    <span>650₹</span>
+                    <span>Up to 3.5 hrs</span>
+                    <input type="checkbox">
+                    <span>IPL Photo Rejuvenation.</span>
+                    <span>750₹</span>
+                    <span>Up to 2.5 hrs</span>
+                    <input type="checkbox">
+                    <span>Atoxelene® Line Smoothing Add-On.</span>
+                    <span>850₹</span>
+                    <span>Up to 5 hrs</span>
+                    <input type="checkbox">
+                    <span>Intraceuticals Anti-Aging Lip Mask.</span>
+                    <span>800₹</span>
+                    <span>Up to 3 hrs</span>
+                    <input type="checkbox">
+                </div>
+            </details>
+            <details>
+                <summary><span>-04</span><span>Nail Care</span><span>+</span></summary>
+                <div class="nail-care">
+                    <span>Manicure.</span>
+                    <span>250₹</span>
+                    <span>Up to 1.5 hrs</span>
+                    <input type="checkbox">
+                    <span>Pedicure.</span>
+                    <span>350₹</span>
+                    <span>Up to 1.5 hrs</span>
+                    <input type="checkbox" >
+                    <span>Acrylic overlays and extensions.</span>
+                    <span>350₹</span>
+                    <span>Up to 2.5 hrs</span>
+                    <input type="checkbox" >
+                    <span>UV gel overlays and extensions.</span>
+                    <span>350₹</span>
+                    <span>Up to 2 hrs</span>
+                    <input type="checkbox" >
+                    <span>Dip powder nails.</span>
+                    <span>450₹</span>
+                    <span>Up to 2.5 hrs</span>
+                    <input type="checkbox" >
+                    <span>SNS nails.</span>
+                    <span>370₹</span>
+                    <span>Up to 1 hr</span>
+                    <input type="checkbox" >
+                    <span>Nail Design.</span>
+                    <span>500₹</span>
+                    <span>Up to 1.5 hrs</span>
+                    <input type="checkbox" >
+                    <span>Silk/fibreglass overlays and extensions.</span>
+                    <span>600₹</span>
+                    <span>Up to 3 hrs</span>
+                    <input type="checkbox" >
+                </div>
+            </details>
+            <details>
+                <summary><span>-05</span><span>Body Massage</span><span>+</span></summary>
+                <div class="body-massage">
+                    <span>Aromatherapy Massage.</span>
+                    <span>850₹</span>
+                    <span>Up to 3.5 hrs</span>
+                    <input type="checkbox">
+                    <span>Craniosacral Therapy.</span>
+                    <span>750₹</span>
+                    <span>Up to 2.5 hrs</span>
+                    <input type="checkbox">
+                    <span>Deep Tissue Massage.</span>
+                    <span>750₹</span>
+                    <span>Up to 2.5 hrs</span>
+                    <input type="checkbox">
+                    <span>Hot Stone Massage.</span>
+                    <span>950₹</span>
+                    <span>Up to 2 hrs</span>
+                    <input type="checkbox">
+                    <span>Myofascial Massage.</span>
+                    <span>850₹</span>
+                    <span>Up to 2.5 hrs</span>
+                    <input type="checkbox">
+                    <span>Pregnancy Massage.</span>
+                    <span>1200₹</span>
+                    <span>Up to 3 hr</span>
+                    <input type="checkbox">
+                    <span>Reflexology.</span>
+                    <span>1000₹</span>
+                    <span>Up to 1.5 hrs</span>
+                    <input type="checkbox">
+                </div>
+            </details>
+            </section>
+            <section class="pointer">
+                <a href="s1.html" style="text-decoration:none; color:black;"><img src="bwd.svg"><br> Step 1</a>
+                <a href="s3.html"><button type="submit"><img src="fwd.svg"><br> Step 3</button></a>
+            </section>
+        </form>
+    </main>
+    <hr>
+    <footer>
+        <section>
+            <h1>Lee</h1>
+            <h2>beauty salon</h2>
+            <p>It's your time to shine. We will care about the rest.</p>
+        </section>
+        <section>
+            <h6>Contacts</h6>
+            <p>info@leebeauty.com</p>
+            <p>+321-3231-4434</p>
+            <p>Av. Albert Lancaster 30, <br>
+                1180, Bruselles, Belgium.</p>
+        </section>
+        <section>
+            <h6>Working Hours</h6>
+            <p>Monday - Friday</p>
+            <p>10 a.m. - 7 p.m.</p>
+            <p>Saturday - Sunday</p>
+            <p>11 a.m. - 9 p.m.</p>
+        </section>
+        <section>
+            <h6>Follow Us</h6>
+            <p><img src="fb-icon.svg" alt="fb-icon">Facebook</p>
+            <p><img src="insta-icon.svg" alt="instagram-icon">Instagram</p>
+            <p><img src="twt-icon.svg" alt="twitter-icon">Twitter</p>
+        </section>
+    </footer>
+</body>
+
+</html>
